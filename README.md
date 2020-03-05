@@ -1,6 +1,6 @@
 You will need the following python modules:
-m2crypto
-signxml
+m2crypto,
+signxml,
 defusedxml
 
 # Running the POC:
