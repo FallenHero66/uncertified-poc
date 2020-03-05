@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:c14n="http://www.w3.org/2001/10/xml-exc-c14n#"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:saml1="urn:oasis:names:tc:SAML:1.0:assertion"
+    xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+    xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"
+    xmlns:wsc="http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512"
+    xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+    xmlns:ns1="http://www.genivia.com/schemas/wssetest.xsd">
+ <SOAP-ENV:Header>
+  <wsse:Security SOAP-ENV:mustUnderstand="1" SOAP-ENV:actor="" SOAP-ENV:role="">
+   <wsu:Timestamp wsu:Id="">
+    <wsu:Created></wsu:Created>
+    <wsu:Expires></wsu:Expires>
+   </wsu:Timestamp>
+   <wsse:UsernameToken wsu:Id="">
+    <wsse:Username></wsse:Username>
+    <wsse:Password Type=""></wsse:Password>
+    <wsse:Nonce EncodingType="" wsu:Id=""></wsse:Nonce>
+    <wsu:Created></wsu:Created>
+   </wsse:UsernameToken>
+   <wsse:BinarySecurityToken wsu:Id="" ValueType="" EncodingType=""></wsse:BinarySecurityToken>
+   <xenc:EncryptedKey Id="" Type="" MimeType="" Encoding="" Recipient="">
+    <xenc:EncryptionMethod Algorithm="">
+     <xenc:KeySize>0</xenc:KeySize>
+     <xenc:OAEPparams></xenc:OAEPparams>
+     <ds:DigestMethod Algorithm="">
+     </ds:DigestMethod>
+     <!-- extensibility element(s) -->
+    </xenc:EncryptionMethod>
+    <ds:KeyInfo Id="">
+     <ds:KeyName></ds:KeyName>
+     <ds:KeyValue>
+      <ds:DSAKeyValue>
+       <ds:G></ds:G>
+       <ds:Y></ds:Y>
+       <ds:J></ds:J>
+       <ds:P></ds:P>
+       <ds:Q></ds:Q>
+       <ds:Seed></ds:Seed>
+       <ds:PgenCounter></ds:PgenCounter>
+      </ds:DSAKeyValue>
+      <ds:RSAKeyValue>
+       <ds:Modulus></ds:Modulus>
+       <ds:Exponent></ds:Exponent>
+      </ds:RSAKeyValue>
+     </ds:KeyValue>
+     <ds:RetrievalMethod URI="" Type="">
+      <ds:Transforms>
+       <ds:Transform Algorithm="">
+        <c14n:InclusiveNamespaces PrefixList="">
+        </c14n:InclusiveNamespaces>
+        <!-- extensibility element(s) -->
+       </ds:Transform>
+      </ds:Transforms>
+     </ds:RetrievalMethod>
+     <ds:X509Data>
+      <ds:X509IssuerSerial>
+       <ds:X509IssuerName></ds:X509IssuerName>
+       <ds:X509SerialNumber></ds:X509SerialNumber>
+      </ds:X509IssuerSerial>
+      <ds:X509SKI></ds:X509SKI>
+      <ds:X509SubjectName></ds:X509SubjectName>
+      <ds:X509Certificate></ds:X509Certificate>
+      <ds:X509CRL></ds:X509CRL>
+     </ds:X509Data>
+     <wsse:SecurityTokenReference wsu:Id="" wsc:Instance="" Usage="">
+      <wsse:Reference URI="" ValueType="">
+      </wsse:Reference>
+      <wsse:KeyIdentifier wsu:Id="" ValueType="" EncodingType=""></wsse:KeyIdentifier>
+      <wsse:Embedded wsu:Id="" ValueType="">
+      </wsse:Embedded>
+      <ds:X509Data>
+       <ds:X509IssuerSerial>
+        <ds:X509IssuerName></ds:X509IssuerName>
+        <ds:X509SerialNumber></ds:X509SerialNumber>
+       </ds:X509IssuerSerial>
+       <ds:X509SKI></ds:X509SKI>
+       <ds:X509SubjectName></ds:X509SubjectName>
+       <ds:X509Certificate></ds:X509Certificate>
+       <ds:X509CRL></ds:X509CRL>
+      </ds:X509Data>
+     </wsse:SecurityTokenReference>
+    </ds:KeyInfo>
+    <xenc:CipherData>
+     <xenc:CipherValue></xenc:CipherValue>
+     <xenc:CipherReference URI="">
+      <xenc:Transforms>
+       <ds:Transform Algorithm="">
+        <c14n:InclusiveNamespaces PrefixList="">
+        </c14n:InclusiveNamespaces>
+        <!-- extensibility element(s) -->
+       </ds:Transform>
+      </xenc:Transforms>
+     </xenc:CipherReference>
+    </xenc:CipherData>
+    <xenc:EncryptionProperties Id="">
+     <xenc:EncryptionProperty Target="" Id="">
+     </xenc:EncryptionProperty>
+    </xenc:EncryptionProperties>
+    <xenc:ReferenceList>
+
+      <xenc:DataReference URI="">
+      </xenc:DataReference>
+      <xenc:KeyReference URI="">
+      </xenc:KeyReference>
+     
+    </xenc:ReferenceList>
+    <xenc:CarriedKeyName></xenc:CarriedKeyName>
+   </xenc:EncryptedKey>
+   <xenc:ReferenceList>
+
+     <xenc:DataReference URI="">
+     </xenc:DataReference>
+     <xenc:KeyReference URI="">
+     </xenc:KeyReference>
+    
+   </xenc:ReferenceList>
+   <wsc:SecurityContextToken wsu:Id="">
+    <wsc:Identifier></wsc:Identifier>
+    <wsc:Instance></wsc:Instance>
+   </wsc:SecurityContextToken>
+   <ds:Signature Id="">
+    <ds:SignedInfo Id="">
+     <ds:CanonicalizationMethod Algorithm="">
+      <c14n:InclusiveNamespaces PrefixList="">
+      </c14n:InclusiveNamespaces>
+     </ds:CanonicalizationMethod>
+     <ds:SignatureMethod Algorithm="">
+      <ds:HMACOutputLength>0</ds:HMACOutputLength>
+     </ds:SignatureMethod>
+     <ds:Reference>
+      <ds:Transforms>
+       <ds:Transform Algorithm="">
+        <c14n:InclusiveNamespaces PrefixList="">
+        </c14n:InclusiveNamespaces>
+        <!-- extensibility element(s) -->
+       </ds:Transform>
+      </ds:Transforms>
+      <ds:DigestMethod Algorithm="">
+      </ds:DigestMethod>
+      <ds:DigestValue></ds:DigestValue>
+     </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue></ds:SignatureValue>
+    <ds:KeyInfo Id="">
+     <ds:KeyName></ds:KeyName>
+     <ds:KeyValue>
+      <ds:DSAKeyValue>
+       <ds:G></ds:G>
+       <ds:Y></ds:Y>
+       <ds:J></ds:J>
+       <ds:P></ds:P>
+       <ds:Q></ds:Q>
+       <ds:Seed></ds:Seed>
+       <ds:PgenCounter></ds:PgenCounter>
+      </ds:DSAKeyValue>
+      <ds:RSAKeyValue>
+       <ds:Modulus></ds:Modulus>
+       <ds:Exponent></ds:Exponent>
+      </ds:RSAKeyValue>
+     </ds:KeyValue>
+     <ds:RetrievalMethod URI="" Type="">
+      <ds:Transforms>
+       <ds:Transform Algorithm="">
+        <c14n:InclusiveNamespaces PrefixList="">
+        </c14n:InclusiveNamespaces>
+        <!-- extensibility element(s) -->
+       </ds:Transform>
+      </ds:Transforms>
+     </ds:RetrievalMethod>
+     <ds:X509Data>
+      <ds:X509IssuerSerial>
+       <ds:X509IssuerName></ds:X509IssuerName>
+       <ds:X509SerialNumber></ds:X509SerialNumber>
+      </ds:X509IssuerSerial>
+      <ds:X509SKI></ds:X509SKI>
+      <ds:X509SubjectName></ds:X509SubjectName>
+      <ds:X509Certificate></ds:X509Certificate>
+      <ds:X509CRL></ds:X509CRL>
+     </ds:X509Data>
+     <wsse:SecurityTokenReference wsu:Id="" wsc:Instance="" Usage="">
+      <wsse:Reference URI="" ValueType="">
+      </wsse:Reference>
+      <wsse:KeyIdentifier wsu:Id="" ValueType="" EncodingType=""></wsse:KeyIdentifier>
+      <wsse:Embedded wsu:Id="" ValueType="">
+      </wsse:Embedded>
+      <ds:X509Data>
+       <ds:X509IssuerSerial>
+        <ds:X509IssuerName></ds:X509IssuerName>
+        <ds:X509SerialNumber></ds:X509SerialNumber>
+       </ds:X509IssuerSerial>
+       <ds:X509SKI></ds:X509SKI>
+       <ds:X509SubjectName></ds:X509SubjectName>
+       <ds:X509Certificate></ds:X509Certificate>
+       <ds:X509CRL></ds:X509CRL>
+      </ds:X509Data>
+     </wsse:SecurityTokenReference>
+    </ds:KeyInfo>
+   </ds:Signature>
+   <saml1:Assertion MajorVersion="" MinorVersion="" AssertionID="" Issuer="" IssueInstant="2019-09-17T06:36:54Z" wsu:Id="">
+    <saml1:Conditions NotBefore="2019-09-17T06:36:54Z" NotOnOrAfter="2019-09-17T06:36:54Z">
+
+      <saml1:AudienceRestrictionCondition>
+       <saml1:Audience></saml1:Audience>
+      </saml1:AudienceRestrictionCondition>
+      <saml1:DoNotCacheCondition>
+      </saml1:DoNotCacheCondition>
+      <saml1:Condition>
+      </saml1:Condition>
+     
+    </saml1:Conditions>
+    <saml1:Advice>
+
+      <saml1:AssertionIDReference></saml1:AssertionIDReference>
+      <saml1:Assertion MajorVersion="" MinorVersion="" AssertionID="" Issuer="" IssueInstant="2019-09-17T06:36:54Z" wsu:Id="">
+       <saml1:Conditions NotBefore="2019-09-17T06:36:54Z" NotOnOrAfter="2019-09-17T06:36:54Z">
+
+         <saml1:AudienceRestrictionCondition xsi:nil="true"/>
+         <saml1:DoNotCacheCondition xsi:nil="true"/>
+         <saml1:Condition xsi:nil="true"/>
+        
+       </saml1:Conditions>
+       <saml1:Advice>
+
+         <saml1:AssertionIDReference></saml1:AssertionIDReference>
+         <saml1:Assertion xsi:nil="true"/>
+        
+       </saml1:Advice>
+
+        <saml1:Statement>
+        </saml1:Statement>
+        <saml1:SubjectStatement>
+         <saml1:Subject>
+          <saml1:NameIdentifier xsi:nil="true"/>
+         </saml1:Subject>
+        </saml1:SubjectStatement>
+        <saml1:AuthenticationStatement AuthenticationMethod="" AuthenticationInstant="2019-09-17T06:36:54Z">
+         <saml1:Subject>
+          <saml1:NameIdentifier xsi:nil="true"/>
+         </saml1:Subject>
+        </saml1:AuthenticationStatement>
+        <saml1:AuthorizationDecisionStatement Resource="" Decision="Permit">
+         <saml1:Subject>
+          <saml1:NameIdentifier xsi:nil="true"/>
+         </saml1:Subject>
+         <saml1:Action Namespace=""></saml1:Action>
+        </saml1:AuthorizationDecisionStatement>
+        <saml1:AttributeStatement>
+         <saml1:Subject>
+          <saml1:NameIdentifier xsi:nil="true"/>
+         </saml1:Subject>
+         <saml1:Attribute AttributeName="" AttributeNamespace="">
+          <saml1:AttributeValue>          </saml1:AttributeValue>
+         </saml1:Attribute>
+        </saml1:AttributeStatement>
+       
+       <ds:Signature Id="">
+        <ds:SignedInfo Id="">
+         <ds:CanonicalizationMethod Algorithm="">
+         </ds:CanonicalizationMethod>
+         <ds:SignatureMethod Algorithm="">
+         </ds:SignatureMethod>
+        </ds:SignedInfo>
+        <ds:SignatureValue></ds:SignatureValue>
+        <ds:KeyInfo Id="">
+         <ds:KeyName></ds:KeyName>
+        </ds:KeyInfo>
+       </ds:Signature>
+      </saml1:Assertion>
+     
+    </saml1:Advice>
+
+     <saml1:Statement>
+     </saml1:Statement>
+     <saml1:SubjectStatement>
+      <saml1:Subject>
+       <saml1:NameIdentifier NameQualifier="" Format=""></saml1:NameIdentifier>
+       <saml1:SubjectConfirmation>
+        <saml1:ConfirmationMethod></saml1:ConfirmationMethod>
+        <saml1:SubjectConfirmationData>        </saml1:SubjectConfirmationData>
+        <ds:KeyInfo Id="">
+         <ds:KeyName></ds:KeyName>
+        </ds:KeyInfo>
+       </saml1:SubjectConfirmation>
+      </saml1:Subject>
+     </saml1:SubjectStatement>
+     <saml1:AuthenticationStatement AuthenticationMethod="" AuthenticationInstant="2019-09-17T06:36:54Z">
+      <saml1:Subject>
+       <saml1:NameIdentifier NameQualifier="" Format=""></saml1:NameIdentifier>
+       <saml1:SubjectConfirmation>
+        <saml1:ConfirmationMethod></saml1:ConfirmationMethod>
+        <saml1:SubjectConfirmationData>        </saml1:SubjectConfirmationData>
+        <ds:KeyInfo Id="">
+         <ds:KeyName></ds:KeyName>
+        </ds:KeyInfo>
+       </saml1:SubjectConfirmation>
+      </saml1:Subject>
+      <saml1:SubjectLocality IPAddress="" DNSAddress="">
+      </saml1:SubjectLocality>
+      <saml1:AuthorityBinding AuthorityKind="xsd:string" Location="" Binding="">
+      </saml1:AuthorityBinding>
+     </saml1:AuthenticationStatement>
+     <saml1:AuthorizationDecisionStatement Resource="" Decision="Permit">
+      <saml1:Subject>
+       <saml1:NameIdentifier NameQualifier="" Format=""></saml1:NameIdentifier>
+       <saml1:SubjectConfirmation>
+        <saml1:ConfirmationMethod></saml1:ConfirmationMethod>
+        <saml1:SubjectConfirmationData>        </saml1:SubjectConfirmationData>
+        <ds:KeyInfo Id="">
+         <ds:KeyName></ds:KeyName>
+        </ds:KeyInfo>
+       </saml1:SubjectConfirmation>
+      </saml1:Subject>
+      <saml1:Action Namespace=""></saml1:Action>
+      <saml1:Evidence>
+
+        <saml1:AssertionIDReference></saml1:AssertionIDReference>
+        <saml1:Assertion MajorVersion="" MinorVersion="" AssertionID="" Issuer="" IssueInstant="2019-09-17T06:36:54Z" wsu:Id="">
+        </saml1:Assertion>
+       
+      </saml1:Evidence>
+     </saml1:AuthorizationDecisionStatement>
+     <saml1:AttributeStatement>
+      <saml1:Subject>
+       <saml1:NameIdentifier NameQualifier="" Format=""></saml1:NameIdentifier>
+       <saml1:SubjectConfirmation>
+        <saml1:ConfirmationMethod></saml1:ConfirmationMethod>
+        <saml1:SubjectConfirmationData>        </saml1:SubjectConfirmationData>
+        <ds:KeyInfo Id="">
+         <ds:KeyName></ds:KeyName>
+        </ds:KeyInfo>
+       </saml1:SubjectConfirmation>
+      </saml1:Subject>
+      <saml1:Attribute AttributeName="" AttributeNamespace="">
+       <saml1:AttributeValue>       </saml1:AttributeValue>
+      </saml1:Attribute>
+     </saml1:AttributeStatement>
+    
+    <ds:Signature Id="">
+     <ds:SignedInfo Id="">
+      <ds:CanonicalizationMethod Algorithm="">
+       <c14n:InclusiveNamespaces PrefixList="">
+       </c14n:InclusiveNamespaces>
+      </ds:CanonicalizationMethod>
+      <ds:SignatureMethod Algorithm="">
+       <ds:HMACOutputLength>0</ds:HMACOutputLength>
+      </ds:SignatureMethod>
+      <ds:Reference>
+       <ds:Transforms>
+        <ds:Transform Algorithm="">
+         <!-- extensibility element(s) -->
+        </ds:Transform>
+       </ds:Transforms>
+       <ds:DigestMethod Algorithm="">
+       </ds:DigestMethod>
+       <ds:DigestValue></ds:DigestValue>
+      </ds:Reference>
+     </ds:SignedInfo>
+     <ds:SignatureValue></ds:SignatureValue>
+     <ds:KeyInfo Id="">
+      <ds:KeyName></ds:KeyName>
+      <ds:KeyValue>
+       <ds:DSAKeyValue>
+        <ds:G></ds:G>
+        <ds:Y></ds:Y>
+        <ds:J></ds:J>
+        <ds:P></ds:P>
+        <ds:Q></ds:Q>
+        <ds:Seed></ds:Seed>
+        <ds:PgenCounter></ds:PgenCounter>
+       </ds:DSAKeyValue>
+       <ds:RSAKeyValue>
+        <ds:Modulus></ds:Modulus>
+        <ds:Exponent></ds:Exponent>
+       </ds:RSAKeyValue>
+      </ds:KeyValue>
+      <ds:RetrievalMethod URI="" Type="">
+       <ds:Transforms>
+        <ds:Transform Algorithm="">
+         <!-- extensibility element(s) -->
+        </ds:Transform>
+       </ds:Transforms>
+      </ds:RetrievalMethod>
+      <ds:X509Data>
+       <ds:X509IssuerSerial>
+        <ds:X509IssuerName></ds:X509IssuerName>
+        <ds:X509SerialNumber></ds:X509SerialNumber>
+       </ds:X509IssuerSerial>
+       <ds:X509SKI></ds:X509SKI>
+       <ds:X509SubjectName></ds:X509SubjectName>
+       <ds:X509Certificate></ds:X509Certificate>
+       <ds:X509CRL></ds:X509CRL>
+      </ds:X509Data>
+      <wsse:SecurityTokenReference wsu:Id="" wsc:Instance="" Usage="">
+       <wsse:Reference URI="" ValueType="">
+       </wsse:Reference>
+       <wsse:KeyIdentifier wsu:Id="" ValueType="" EncodingType=""></wsse:KeyIdentifier>
+       <wsse:Embedded wsu:Id="" ValueType="">
+       </wsse:Embedded>
+       <ds:X509Data>
+        <ds:X509IssuerSerial>
+         <ds:X509IssuerName></ds:X509IssuerName>
+         <ds:X509SerialNumber></ds:X509SerialNumber>
+        </ds:X509IssuerSerial>
+        <ds:X509SKI></ds:X509SKI>
+        <ds:X509SubjectName></ds:X509SubjectName>
+        <ds:X509Certificate></ds:X509Certificate>
+        <ds:X509CRL></ds:X509CRL>
+       </ds:X509Data>
+      </wsse:SecurityTokenReference>
+     </ds:KeyInfo>
+    </ds:Signature>
+   </saml1:Assertion>
+   <saml2:Assertion Version="" ID="" IssueInstant="2019-09-17T06:36:54Z" wsu:Id="">
+    <saml2:Issuer Format="" SPProvidedID="" NameQualifier="" SPNameQualifier=""></saml2:Issuer>
+    <ds:Signature Id="">
+     <ds:SignedInfo Id="">
+      <ds:CanonicalizationMethod Algorithm="">
+       <c14n:InclusiveNamespaces PrefixList="">
+       </c14n:InclusiveNamespaces>
+      </ds:CanonicalizationMethod>
+      <ds:SignatureMethod Algorithm="">
+       <ds:HMACOutputLength>0</ds:HMACOutputLength>
+      </ds:SignatureMethod>
+      <ds:Reference>
+       <ds:Transforms>
+        <ds:Transform Algorithm="">
+         <!-- extensibility element(s) -->
+        </ds:Transform>
+       </ds:Transforms>
+       <ds:DigestMethod Algorithm="">
+       </ds:DigestMethod>
+       <ds:DigestValue></ds:DigestValue>
+      </ds:Reference>
+     </ds:SignedInfo>
+     <ds:SignatureValue></ds:SignatureValue>
+     <ds:KeyInfo Id="">
+      <ds:KeyName></ds:KeyName>
+      <ds:KeyValue>
+       <ds:DSAKeyValue>
+        <ds:G></ds:G>
+        <ds:Y></ds:Y>
+        <ds:J></ds:J>
+        <ds:P></ds:P>
+        <ds:Q></ds:Q>
+        <ds:Seed></ds:Seed>
+        <ds:PgenCounter></ds:PgenCounter>
+       </ds:DSAKeyValue>
+       <ds:RSAKeyValue>
+        <ds:Modulus></ds:Modulus>
+        <ds:Exponent></ds:Exponent>
+       </ds:RSAKeyValue>
+      </ds:KeyValue>
+      <ds:RetrievalMethod URI="" Type="">
+       <ds:Transforms>
+        <ds:Transform Algorithm="">
+         <!-- extensibility element(s) -->
+        </ds:Transform>
+       </ds:Transforms>
+      </ds:RetrievalMethod>
+      <ds:X509Data>
+       <ds:X509IssuerSerial>
+        <ds:X509IssuerName></ds:X509IssuerName>
+        <ds:X509SerialNumber></ds:X509SerialNumber>
+       </ds:X509IssuerSerial>
+       <ds:X509SKI></ds:X509SKI>
+       <ds:X509SubjectName></ds:X509SubjectName>
+       <ds:X509Certificate></ds:X509Certificate>
+       <ds:X509CRL></ds:X509CRL>
+      </ds:X509Data>
+      <wsse:SecurityTokenReference wsu:Id="" wsc:Instance="" Usage="">
+       <wsse:Reference URI="" ValueType="">
+       </wsse:Reference>
+       <wsse:KeyIdentifier wsu:Id="" ValueType="" EncodingType=""></wsse:KeyIdentifier>
+       <wsse:Embedded wsu:Id="" ValueType="">
+       </wsse:Embedded>
+       <ds:X509Data>
+        <ds:X509IssuerSerial>
+         <ds:X509IssuerName></ds:X509IssuerName>
+         <ds:X509SerialNumber></ds:X509SerialNumber>
+        </ds:X509IssuerSerial>
+        <ds:X509SKI></ds:X509SKI>
+        <ds:X509SubjectName></ds:X509SubjectName>
+        <ds:X509Certificate></ds:X509Certificate>
+        <ds:X509CRL></ds:X509CRL>
+       </ds:X509Data>
+      </wsse:SecurityTokenReference>
+     </ds:KeyInfo>
+    </ds:Signature>
+    <saml2:Subject>
+     <saml2:BaseID NameQualifier="" SPNameQualifier="">
+     </saml2:BaseID>
+     <saml2:NameID Format="" SPProvidedID="" NameQualifier="" SPNameQualifier=""></saml2:NameID>
+     <saml2:EncryptedID>
+      <xenc:EncryptedData Id="" Type="" MimeType="" Encoding="">
+       <xenc:EncryptionMethod Algorithm="">
+        <xenc:KeySize>0</xenc:KeySize>
+        <xenc:OAEPparams></xenc:OAEPparams>
+        <ds:DigestMethod Algorithm="">
+        </ds:DigestMethod>
+        <!-- extensibility element(s) -->
+       </xenc:EncryptionMethod>
+       <ds:KeyInfo Id="">
+        <ds:KeyName></ds:KeyName>
+        <ds:KeyValue>
+        </ds:KeyValue>
+        <ds:RetrievalMethod URI="" Type="">
+        </ds:RetrievalMethod>
+        <ds:X509Data>
+         <ds:X509SKI></ds:X509SKI>
+         <ds:X509SubjectName></ds:X509SubjectName>
+         <ds:X509Certificate></ds:X509Certificate>
+         <ds:X509CRL></ds:X509CRL>
+        </ds:X509Data>
+        <wsse:SecurityTokenReference wsu:Id="" wsc:Instance="" Usage="">
+        </wsse:SecurityTokenReference>
+       </ds:KeyInfo>
+       <xenc:CipherData>
+        <xenc:CipherValue></xenc:CipherValue>
+        <xenc:CipherReference URI="">
+        </xenc:CipherReference>
+       </xenc:CipherData>
+       <xenc:EncryptionProperties Id="">
+        <xenc:EncryptionProperty Target="" Id="">
+        </xenc:EncryptionProperty>
+       </xenc:EncryptionProperties>
+      </xenc:EncryptedData>
+      <xenc:EncryptedKey>
+       <xenc:EncryptionMethod Algorithm="">
+        <xenc:KeySize>0</xenc:KeySize>
+        <xenc:OAEPparams></xenc:OAEPparams>
+        <ds:DigestMethod Algorithm="">
+        </ds:DigestMethod>
+        <!-- extensibility element(s) -->
+       </xenc:EncryptionMethod>
+       <ds:KeyInfo Id="">
+        <ds:KeyName></ds:KeyName>
+        <ds:KeyValue>
+        </ds:KeyValue>
+        <ds:RetrievalMethod URI="" Type="">
+        </ds:RetrievalMethod>
+        <ds:X509Data>
+         <ds:X509SKI></ds:X509SKI>
+         <ds:X509SubjectName></ds:X509SubjectName>
+         <ds:X509Certificate></ds:X509Certificate>
+         <ds:X509CRL></ds:X509CRL>
+        </ds:X509Data>
+        <wsse:SecurityTokenReference wsu:Id="" wsc:Instance="" Usage="">
+        </wsse:SecurityTokenReference>
+       </ds:KeyInfo>
+       <xenc:CipherData>
+        <xenc:CipherValue></xenc:CipherValue>
+        <xenc:CipherReference URI="">
+        </xenc:CipherReference>
+       </xenc:CipherData>
+       <xenc:EncryptionProperties Id="">
+        <xenc:EncryptionProperty Target="" Id="">
+        </xenc:EncryptionProperty>
+       </xenc:EncryptionProperties>
+       <xenc:ReferenceList>
+
+         <xenc:DataReference URI="">
+         </xenc:DataReference>
+         <xenc:KeyReference URI="">
+         </xenc:KeyReference>
+        
+       </xenc:ReferenceList>
+       <xenc:CarriedKeyName></xenc:CarriedKeyName>
+      </xenc:EncryptedKey>
+     </saml2:EncryptedID>
+     <saml2:SubjectConfirmation Method="">
+      <saml2:BaseID NameQualifier="" SPNameQualifier="">
+      </saml2:BaseID>
+      <saml2:NameID Format="" SPProvidedID="" NameQualifier="" SPNameQualifier=""></saml2:NameID>
+      <saml2:EncryptedID>
+       <xenc:EncryptedData Id="" Type="" MimeType="" Encoding="">
+        <xenc:EncryptionMethod Algorithm="">
+         <xenc:OAEPparams></xenc:OAEPparams>
+         <!-- extensibility element(s) -->
+        </xenc:EncryptionMethod>
+        <ds:KeyInfo Id="">
+         <ds:KeyName></ds:KeyName>
+        </ds:KeyInfo>
+        <xenc:CipherData>
+         <xenc:CipherValue></xenc:CipherValue>
+        </xenc:CipherData>
+        <xenc:EncryptionProperties Id="">
+         <xenc:EncryptionProperty Target="" Id="">
+         </xenc:EncryptionProperty>
+        </xenc:EncryptionProperties>
+       </xenc:EncryptedData>
+       <xenc:EncryptedKey>
+        <xenc:EncryptionMethod Algorithm="">
+         <xenc:OAEPparams></xenc:OAEPparams>
+         <!-- extensibility element(s) -->
+        </xenc:EncryptionMethod>
+        <ds:KeyInfo Id="">
+         <ds:KeyName></ds:KeyName>
+        </ds:KeyInfo>
+        <xenc:CipherData>
+         <xenc:CipherValue></xenc:CipherValue>
+        </xenc:CipherData>
+        <xenc:EncryptionProperties Id="">
+         <xenc:EncryptionProperty Target="" Id="">
+         </xenc:EncryptionProperty>
+        </xenc:EncryptionProperties>
+        <xenc:ReferenceList>
+
+          <xenc:DataReference URI="">
+          </xenc:DataReference>
+          <xenc:KeyReference URI="">
+          </xenc:KeyReference>
+         
+        </xenc:ReferenceList>
+        <xenc:CarriedKeyName></xenc:CarriedKeyName>
+       </xenc:EncryptedKey>
+      </saml2:EncryptedID>
+      <saml2:SubjectConfirmationData NotBefore="2019-09-17T06:36:54Z" NotOnOrAfter="2019-09-17T06:36:54Z" Recipient="" InResponseTo="" Address="">
+       <!-- extensibility element(s) -->
+      </saml2:SubjectConfirmationData>
+     </saml2:SubjectConfirmation>
+    </saml2:Subject>
+    <saml2:Conditions NotBefore="2019-09-17T06:36:54Z" NotOnOrAfter="2019-09-17T06:36:54Z">
+
+      <saml2:Condition>
+      </saml2:Condition>
+      <saml2:AudienceRestriction>
+       <saml2:Audience></saml2:Audience>
+      </saml2:AudienceRestriction>
+      <saml2:OneTimeUse>
+      </saml2:OneTimeUse>
+      <saml2:ProxyRestriction Count="">
+       <saml2:Audience></saml2:Audience>
+      </saml2:ProxyRestriction>
+     
+    </saml2:Conditions>
+    <saml2:Advice>
+
+      <saml2:AssertionIDRef></saml2:AssertionIDRef>
+      <saml2:AssertionURIRef></saml2:AssertionURIRef>
+      <saml2:Assertion Version="" ID="" IssueInstant="2019-09-17T06:36:54Z" wsu:Id="">
+       <saml2:Issuer Format="" SPProvidedID="" NameQualifier="" SPNameQualifier=""></saml2:Issuer>
+       <ds:Signature Id="">
+        <ds:SignedInfo Id="">
+         <ds:CanonicalizationMethod Algorithm="">
+         </ds:CanonicalizationMethod>
+         <ds:SignatureMethod Algorithm="">
+         </ds:SignatureMethod>
+        </ds:SignedInfo>
+        <ds:SignatureValue></ds:SignatureValue>
+        <ds:KeyInfo Id="">
+         <ds:KeyName></ds:KeyName>
+        </ds:KeyInfo>
+       </ds:Signature>
+       <saml2:Subject>
+        <saml2:BaseID NameQualifier="" SPNameQualifier="">
+        </saml2:BaseID>
+        <saml2:NameID Format="" SPProvidedID="" NameQualifier="" SPNameQualifier=""></saml2:NameID>
+        <saml2:EncryptedID>
+         <xenc:EncryptedData Id="" Type="" MimeType="" Encoding="">
+          <xenc:CipherData>
+           <xenc:CipherValue></xenc:CipherValue>
+          </xenc:CipherData>
+         </xenc:EncryptedData>
+        </saml2:EncryptedID>
+        <saml2:SubjectConfirmation Method="">
+         <saml2:BaseID xsi:nil="true"/>
+         <saml2:NameID xsi:nil="true"/>
+         <saml2:EncryptedID xsi:nil="true"/>
+        </saml2:SubjectConfirmation>
+       </saml2:Subject>
+       <saml2:Conditions NotBefore="2019-09-17T06:36:54Z" NotOnOrAfter="2019-09-17T06:36:54Z">
+
+         <saml2:Condition xsi:nil="true"/>
+         <saml2:AudienceRestriction xsi:nil="true"/>
+         <saml2:OneTimeUse xsi:nil="true"/>
+         <saml2:ProxyRestriction xsi:nil="true"/>
+        
+       </saml2:Conditions>
+       <saml2:Advice>
+
+         <saml2:AssertionIDRef></saml2:AssertionIDRef>
+         <saml2:AssertionURIRef></saml2:AssertionURIRef>
+         <saml2:Assertion xsi:nil="true"/>
+         <saml2:EncryptedAssertion xsi:nil="true"/>
+        
+       </saml2:Advice>
+
+        <saml2:Statement>
+        </saml2:Statement>
+        <saml2:AuthnStatement AuthnInstant="2019-09-17T06:36:54Z" SessionIndex="" SessionNotOnOrAfter="2019-09-17T06:36:54Z">
+         <saml2:AuthnContext>
+          <saml2:AuthnContextClassRef></saml2:AuthnContextClassRef>
+          <saml2:AuthnContextDecl>          </saml2:AuthnContextDecl>
+          <saml2:AuthnContextDeclRef></saml2:AuthnContextDeclRef>
+         </saml2:AuthnContext>
+        </saml2:AuthnStatement>
+        <saml2:AuthzDecisionStatement Resource="" Decision="Permit">
+         <saml2:Action Namespace=""></saml2:Action>
+        </saml2:AuthzDecisionStatement>
+        <saml2:AttributeStatement>
+        </saml2:AttributeStatement>
+       
+      </saml2:Assertion>
+      <saml2:EncryptedAssertion>
+       <xenc:EncryptedData Id="" Type="" MimeType="" Encoding="">
+        <xenc:EncryptionMethod Algorithm="">
+         <xenc:OAEPparams></xenc:OAEPparams>
+         <!-- extensibility element(s) -->
+        </xenc:EncryptionMethod>
+        <ds:KeyInfo Id="">
+         <ds:KeyName></ds:KeyName>
+        </ds:KeyInfo>
+        <xenc:CipherData>
+         <xenc:CipherValue></xenc:CipherValue>
+        </xenc:CipherData>
+        <xenc:EncryptionProperties Id="">
+         <xenc:EncryptionProperty Target="" Id="">
+         </xenc:EncryptionProperty>
+        </xenc:EncryptionProperties>
+       </xenc:EncryptedData>
+       <xenc:EncryptedKey>
+        <xenc:EncryptionMethod Algorithm="">
+         <xenc:OAEPparams></xenc:OAEPparams>
+         <!-- extensibility element(s) -->
+        </xenc:EncryptionMethod>
+        <ds:KeyInfo Id="">
+         <ds:KeyName></ds:KeyName>
+        </ds:KeyInfo>
+        <xenc:CipherData>
+         <xenc:CipherValue></xenc:CipherValue>
+        </xenc:CipherData>
+        <xenc:EncryptionProperties Id="">
+         <xenc:EncryptionProperty Target="" Id="">
+         </xenc:EncryptionProperty>
+        </xenc:EncryptionProperties>
+        <xenc:ReferenceList>
+
+          <xenc:DataReference URI="">
+          </xenc:DataReference>
+          <xenc:KeyReference URI="">
+          </xenc:KeyReference>
+         
+        </xenc:ReferenceList>
+        <xenc:CarriedKeyName></xenc:CarriedKeyName>
+       </xenc:EncryptedKey>
+      </saml2:EncryptedAssertion>
+     
+    </saml2:Advice>
+
+     <saml2:Statement>
+     </saml2:Statement>
+     <saml2:AuthnStatement AuthnInstant="2019-09-17T06:36:54Z" SessionIndex="" SessionNotOnOrAfter="2019-09-17T06:36:54Z">
+      <saml2:SubjectLocality Address="" DNSName="">
+      </saml2:SubjectLocality>
+      <saml2:AuthnContext>
+       <saml2:AuthnContextClassRef></saml2:AuthnContextClassRef>
+       <saml2:AuthnContextDecl>       </saml2:AuthnContextDecl>
+       <saml2:AuthnContextDeclRef></saml2:AuthnContextDeclRef>
+       <saml2:AuthenticatingAuthority></saml2:AuthenticatingAuthority>
+      </saml2:AuthnContext>
+     </saml2:AuthnStatement>
+     <saml2:AuthzDecisionStatement Resource="" Decision="Permit">
+      <saml2:Action Namespace=""></saml2:Action>
+      <saml2:Evidence>
+
+        <saml2:AssertionIDRef></saml2:AssertionIDRef>
+        <saml2:AssertionURIRef></saml2:AssertionURIRef>
+        <saml2:Assertion Version="" ID="" IssueInstant="2019-09-17T06:36:54Z" wsu:Id="">
+         <saml2:Issuer Format="" SPProvidedID="" NameQualifier="" SPNameQualifier=""></saml2:Issuer>
+        </saml2:Assertion>
+        <saml2:EncryptedAssertion>
+         <xenc:EncryptedData Id="" Type="" MimeType="" Encoding="">
+          <xenc:CipherData>
+           <xenc:CipherValue></xenc:CipherValue>
+          </xenc:CipherData>
+         </xenc:EncryptedData>
+        </saml2:EncryptedAssertion>
+       
+      </saml2:Evidence>
+     </saml2:AuthzDecisionStatement>
+     <saml2:AttributeStatement>
+
+       <saml2:Attribute Name="" NameFormat="" FriendlyName="">
+        <saml2:AttributeValue>        </saml2:AttributeValue>
+       </saml2:Attribute>
+       <saml2:EncryptedAttribute>
+        <xenc:EncryptedData Id="" Type="" MimeType="" Encoding="">
+         <xenc:CipherData>
+          <xenc:CipherValue></xenc:CipherValue>
+         </xenc:CipherData>
+        </xenc:EncryptedData>
+        <xenc:EncryptedKey>
+         <xenc:CipherData>
+          <xenc:CipherValue></xenc:CipherValue>
+         </xenc:CipherData>
+         <xenc:CarriedKeyName></xenc:CarriedKeyName>
+        </xenc:EncryptedKey>
+       </saml2:EncryptedAttribute>
+      
+     </saml2:AttributeStatement>
+    
+   </saml2:Assertion>
+  </wsse:Security>
+ </SOAP-ENV:Header>
+ <SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <ns1:subResponse>
+   <result>0.0</result>
+  </ns1:subResponse>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
